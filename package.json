@@ -1,0 +1,18 @@
+{
+  "name": "ts-habit-tracker",
+  "version": "0.1.0",
+  "description": "A tiny command-line habit tracker with streaks, written in TypeScript",
+  "type": "module",
+  "bin": { "habit": "dist/cli.js" },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test \"dist/**/*.test.js\"",
+    "habit": "node dist/cli.js"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
